@@ -1,5 +1,6 @@
 # MTech-Mini
 A mini gaming console that I made with an ESP32
+Module used: https://www.amazon.co.uk/dp/B0F24X83FC?ref=ppx_yo2ov_dt_b_fed_asin_title
 
 # ⚙️ Current Features
 - Splash Screen
