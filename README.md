@@ -17,3 +17,13 @@ A mini gaming console that I made with an ESP32
 - Date and Time
 
 - Menu Theme Music
+
+# 🛠️ Setup Guide
+
+- Copy and paste firmware into Arduino IDE
+
+- Install following libraries: TFT_eSPI, SD
+
+- Format SD card as FAT32
+
+Find additional docs in **Documentation **Folder
