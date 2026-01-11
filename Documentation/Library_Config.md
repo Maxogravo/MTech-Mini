@@ -2,7 +2,6 @@
 I spent hours initially figuring out what pins each hardware feature was connected to the ESP32. Here are the correct setups for each library that the console uses:
 
 # TFT_eSPI (Graphics Library):
-<code>
 #define ST7789_DRIVER
 
 #define TFT_WIDTH  240
@@ -31,4 +30,7 @@ I spent hours initially figuring out what pins each hardware feature was connect
 #define LOAD_FONT6
 #define LOAD_GFXFF
 #define SMOOTH_FONT
-</code>
+
+
+This should be pasted into: Arduino/libraries/TFT_eSPI/User_Setup.h
+Overwrite anything else.
