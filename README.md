@@ -26,4 +26,4 @@ A mini gaming console that I made with an ESP32
 
 - Format SD card as FAT32
 
-Find additional docs in **Documentation **Folder
+Find additional docs in 'Documentation' Folder
