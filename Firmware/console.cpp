@@ -33,6 +33,7 @@ void Splash(){
 void Configure() {
 	//Add date time and user config here
 	SD.mkdir("config/user.txt");
+	SD.mkdir("config/wifi.txt");
 	userdatfile = SD.open("config/user.txt", FILE_WRITE);
 	userdatfile.write(username);
 	
