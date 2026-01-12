@@ -30,6 +30,10 @@ void Splash(){
 
 }
 
+void Configure() {
+	//Add date time and user config here
+}
+
 void Home() {
 	//draw stuff
 	tft.fillScreen(TFT_BLACK);
@@ -61,6 +65,9 @@ void setup() {
 
 	//Serial
 	Serial.begin(115200);
+
+	if SD.exist("config.json"){Serial.Print("Returning User");}
+	else {Configure();}
 
   Splash();
 	delay(3000);
