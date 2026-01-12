@@ -32,6 +32,10 @@ void Splash(){
 
 void Configure() {
 	//Add date time and user config here
+	SD.mkdir("config/user.txt");
+	userdatfile = SD.open("config/user.txt", FILE_WRITE);
+	userdatfile.write(username);
+	
 }
 
 void Home() {
@@ -66,7 +70,7 @@ void setup() {
 	//Serial
 	Serial.begin(115200);
 
-	if SD.exist("config.json"){Serial.Print("Returning User");}
+	if SD.exist("config/user.txt"){Serial.Print("Returning User");}
 	else {Configure();}
 
   Splash();
