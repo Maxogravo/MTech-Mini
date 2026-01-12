@@ -30,6 +30,15 @@ void Splash(){
 
 }
 
+void Configure() {
+	//Add date time and user config here
+	SD.mkdir("config/user.txt");
+	SD.mkdir("config/wifi.txt");
+	userdatfile = SD.open("config/user.txt", FILE_WRITE);
+	userdatfile.write(username);
+	
+}
+
 void Home() {
 	//draw stuff
 	tft.fillScreen(TFT_BLACK);
@@ -61,6 +70,9 @@ void setup() {
 
 	//Serial
 	Serial.begin(115200);
+
+	if SD.exist("config/user.txt"){Serial.Print("Returning User");}
+	else {Configure();}
 
   Splash();
 	delay(3000);
