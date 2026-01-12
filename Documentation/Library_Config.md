@@ -48,3 +48,10 @@ I spent hours initially figuring out what pins each hardware feature was connect
 This should be pasted into: Arduino/libraries/TFT_eSPI/User_Setup.h
 
 Overwrite anything else.
+
+# SD (Pins)
+#define TFT_CS    15
+#define TOUCH_CS  33
+#define SD_CS     5
+
+Part of the firmware. 
