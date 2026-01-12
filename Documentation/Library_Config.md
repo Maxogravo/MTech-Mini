@@ -51,7 +51,9 @@ Overwrite anything else.
 
 # SD (Pins)
 #define TFT_CS    15
+
 #define TOUCH_CS  33
+
 #define SD_CS     5
 
 Part of the firmware. 
